@@ -1,29 +1,20 @@
-import Routes from "app/types/enums/Routes";
+import { background, text } from "app/styles/Themes";
 import { useState } from "react";
 import data from "../data/AppData";
-import Footer from "./footer/Footer";
 import Main from "./main/Main";
 import Nav from "./nav/Nav";
+
+const appStyle = `${background.primary.get()} ${text.primary.get()} min-h-screen`;
 
 const App: React.FC = () => {
     const [nav, setNav] = useState(data.nav);
     const [main, setMain] = useState(data.main);
-    const [footer, setFooter] = useState(data.footer);
-
-    const setLinkActive = (route: Routes) => {
-        let links = nav.links.map(link => {
-            link.active = link.pathname === route;
-            return link;
-        })
-        setNav({...nav, links: [...links]});
-    }
 
     return (
-        <>
+        <div className={appStyle}>
             <Nav {...nav} />
-            <Main {...main} setLinkActive={setLinkActive} />
-            <Footer {...footer} />
-        </>
+            <Main {...main} />
+        </div>
     );
 }
 

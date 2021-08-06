@@ -1,80 +1,22 @@
-import Stylist, { Color, Hue } from "stylist/Stylist";
+class Theme {
+    light: string;
+    dark: string;
 
-const PRIMARY_LIGHT: Hue = [Color.INDIGO, 200];
-const PRIMARY: Hue = [Color.INDIGO, 300];
-const PRIMARY_DARK: Hue = [Color.INDIGO, 600];
-const PRIMARY_DARKER: Hue = [Color.INDIGO, 800];
-const PRIMARY_DARKEST: Hue = [Color.INDIGO, 900];
+    constructor(light: string, dark: string) {
+        this.light = light;
+        this.dark = dark;
+    }
 
-const LIGHT: Hue = [Color.GRAY, 100];
-const DARK: Hue = [Color.GRAY, 900];
+    get() {
+        return `${this.light} ${this.dark}`;
+    }
+}
 
-export const PrimaryTheme = Stylist.builder()
-    .inMobile({
-        bgColor: PRIMARY,
-        text: {
-            color: DARK,
-        }
-    })
-    .dark({
-        bgColor: PRIMARY_DARK,
-        text: {
-            color: LIGHT,
-        }
-    });
-export const PrimaryDarkTheme = Stylist.builder()
-    .inMobile({
-        bgColor: PRIMARY_DARK,
-        text: {
-            color: LIGHT,
-        }
-    })
-    .dark({
-        bgColor: PRIMARY_DARKER,
-        text: {
-            color: LIGHT,
-        }
-    });
-export const PrimaryHovereableTheme = Stylist.builder()
-    .hover({
-        bgColor: PRIMARY_LIGHT,
-        text: {
-            color: DARK,
-        }
-    })
-    .dark({})
-    .hover({
-        bgColor: PRIMARY_DARKEST,
-        text: {
-            color: LIGHT,
-        }
-    });
+export const background = {
+    primary: new Theme('bg-gray-200', 'dark:bg-gray-800'),
+    hoverable: new Theme('hover:bg-gray-300', 'dark:hover:bg-gray-900'),
+};
 
-export const PrimaryActiveTheme = Stylist.builder()
-    .inMobile({
-        bgColor: PRIMARY_LIGHT,
-        text: {
-            color: DARK,
-        }
-    })
-    .dark({
-        bgColor: PRIMARY_DARKEST,
-        text: {
-            color: LIGHT,
-        }
-    });
-
-
-export const DefaultTheme = Stylist.builder()
-    .inMobile({
-        bgColor: LIGHT,
-        text: {
-            color: DARK,
-        }
-    })
-    .dark({
-        bgColor: DARK,
-        text: {
-            color: LIGHT,
-        }
-    });
+export const text = {
+    primary: new Theme('text-gray-800', 'dark:text-gray-200')
+}

@@ -1,18 +1,11 @@
-import Headline from "app/components/common/headline/Headline";
-import Stylist, { FontSize, FontWeight } from "stylist/Stylist";
-
-const HeaderStyle = Stylist.builder()
-    .inMobile({
-        text: {
-            size: FontSize.XXL,
-            weight: FontWeight.BOLD
-        }
-    });
+const headerStyle = `text-2xl font-bold px-6`;
 
 export interface HeaderProps {
     header: string;
 }
 
-const Header: React.FC<HeaderProps> = (props: HeaderProps) => <Headline style={HeaderStyle}>{props.header}</Headline>;
+const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
+    return (<h2 className={headerStyle}>{props.header}</h2>);
+}
 
 export default Header;

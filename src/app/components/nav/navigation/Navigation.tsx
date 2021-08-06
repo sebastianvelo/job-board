@@ -1,54 +1,19 @@
-import Dropdown from "app/components/common/dropdown/Dropdown";
-import Stylist, { Content, Display, Items } from "stylist/Stylist";
-import ButtonsContainer, { ButtonsContainerProps } from "../buttons/ButtonsContainer";
-import NavLinksContainer, { NavLinksContainerProps } from "../links/NavLinksContainer";
-import NavLinksToggler from "../links/NavLinksToggler";
+import { background } from "app/styles/Themes";
+import Link, { LinkProps } from "../../common/link/Link";
 
-const NavigationContainerStyle = Stylist.builder()
-    .inLaptop({
-        display: Display.FLEX,
-        mainAxis: {
-            content: Content.END
-        },
-        crossAxis: {
-            items: Items.CENTER
-        }
-    })
-    .build();
+const navigationStyle = `space-x-2 border-l-2 border-r-2  border-gray-700  px-3 py-5`;
+const linkStyle = `${background.hoverable.get()} px-5 py-3 rounded-md`;
 
-const DropdownContainerStyle = Stylist.builder()
-    .inMobile({
-        grid: {
-            column: {
-                span: 12
-            }
-        },
-    })
-    .inLaptop({
-        grid: {
-            column: {
-                span: 6
-            }
-        },
-    })
-    .build();
-
-export interface NavigationProps extends NavLinksContainerProps, ButtonsContainerProps {}
+export interface NavigationProps {
+    links: LinkProps[];
+}
 
 const Navigation: React.FC<NavigationProps> = (props: NavigationProps) => {
-    const content = (
-        <div className={NavigationContainerStyle}>
-            <NavLinksContainer links={props.links} />
-            <ButtonsContainer  menu={props.menu} />
-        </div>
-    );
     return (
-        <div className={DropdownContainerStyle}>
-            <Dropdown
-                trigger={<NavLinksToggler />}
-                content={content}
-                style={Stylist.builder().inLaptop({display: Display.BLOCK})}
-            />
+        <div className={navigationStyle}>
+            {props.links.map((link, index) => (
+                <Link className={linkStyle} key={index} {...link} />
+            ))}
         </div>
     );
 }

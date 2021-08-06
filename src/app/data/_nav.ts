@@ -1,46 +1,25 @@
+import { NavProps } from "app/components/nav/Nav";
 import Routes from "app/types/enums/Routes";
-import { NavProps } from "../components/nav/Nav";
 
 const data: NavProps = {
-    header: 'BestTemplate',
+    header: 'JobBoardIT',
     links: [
         {
-            pathname: Routes.HOME,
-            label: "Home",
-            active: false
+            path: `${Routes.HOME}`,
+            children: `Offers`
         },
         {
-            pathname: Routes.ABOUT,
-            label: "About",
-            active: false
+            path: `${Routes.HOME}`,
+            children: `Brand Stories`
         },
         {
-            pathname: Routes.MORE,
-            label: "More",
-            active: false
+            path: `${Routes.HOME}`,
+            children: `Geek`
         },
         {
-            pathname: Routes.LOGIN,
-            label: "Login",
-            active: false
+            path: `${Routes.HOME}`,
+            children: `Matchmaking`
         },
-    ],
-    menu: {
-        items: [
-            {
-                pathname: Routes.HOME,
-                label: "Profile",
-            },
-            {
-                pathname: Routes.HOME,
-                label: "Settings",
-            },
-        ],
-        toggler: {
-            alt: 'Avatar',
-            src: 'https://picsum.photos/200'
-        }
-    },
-};
-
+    ]
+}
 export default data;

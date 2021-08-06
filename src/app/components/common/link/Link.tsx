@@ -1,14 +1,18 @@
-import Routes from "app/types/enums/Routes";
 import { Link as LinkReact } from "react-router-dom";
 
 export interface LinkProps {
-    pathname: Routes;
-    label: string;
+    path: string;
+    children: React.ReactNode;
     search?: string;
     hash?: string;
     state?: object;
     className?: string;
 }
-
-const Link: React.FC<LinkProps> = (props: LinkProps) => <LinkReact key={props.pathname} className={props.className} to={{...props}}>{props.label}</LinkReact>;
+ 
+const Link: React.FC<LinkProps> = (props: LinkProps) => {
+    return ( 
+        <LinkReact to={{...props}} className={props.className}>{props.children}</LinkReact>
+     );
+}
+ 
 export default Link;

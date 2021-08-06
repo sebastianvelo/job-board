@@ -1,9 +1,9 @@
 import Routes from "app/types/enums/Routes";
-import { MainData } from "../components/main/Main";
-import HomePage from "../components/main/pages/home/HomePage";
-import LoginPage from "../components/main/pages/login/LoginPage";
+import { MainProps } from "../components/main/Main";
+import HomePage from "../components/pages/home/HomePage";
+import LoginPage from "../components/pages/login/LoginPage";
 
-const data: MainData = {
+const data: MainProps = {
     pages: [
         {
             route: Routes.HOME,
