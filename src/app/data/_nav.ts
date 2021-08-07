@@ -5,19 +5,19 @@ const data: NavProps = {
     header: 'JobBoardIT',
     links: [
         {
-            path: `${Routes.HOME}`,
+            pathname: `${Routes.HOME}`,
             children: `Offers`
         },
         {
-            path: `${Routes.HOME}`,
+            pathname: `${Routes.HOME}`,
             children: `Brand Stories`
         },
         {
-            path: `${Routes.HOME}`,
+            pathname: `${Routes.HOME}`,
             children: `Geek`
         },
         {
-            path: `${Routes.HOME}`,
+            pathname: `${Routes.HOME}`,
             children: `Matchmaking`
         },
     ]

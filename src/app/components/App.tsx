@@ -4,7 +4,7 @@ import data from "../data/AppData";
 import Main from "./main/Main";
 import Nav from "./nav/Nav";
 
-const appStyle = `${background.primary.get()} ${text.primary.get()} min-h-screen`;
+const appStyle = `${background.primary.get()} ${text.primary.get()} h-screen overflow-hidden`;
 
 const App: React.FC = () => {
     const [nav, setNav] = useState(data.nav);

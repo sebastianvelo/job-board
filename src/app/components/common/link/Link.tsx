@@ -1,7 +1,7 @@
 import { Link as LinkReact } from "react-router-dom";
 
 export interface LinkProps {
-    path: string;
+    pathname: string;
     children: React.ReactNode;
     search?: string;
     hash?: string;
@@ -10,9 +10,7 @@ export interface LinkProps {
 }
  
 const Link: React.FC<LinkProps> = (props: LinkProps) => {
-    return ( 
-        <LinkReact to={{...props}} className={props.className}>{props.children}</LinkReact>
-     );
+    return (<LinkReact to={{...props}} className={props.className}>{props.children}</LinkReact>);
 }
  
 export default Link;

@@ -1,7 +1,6 @@
 enum Routes {
     HOME = '/home',
-    ABOUT = '/about',
     LOGIN = '/login',
-    MORE = '/more',
+    OFFER = '/offer/:id'
 }
 export default Routes;

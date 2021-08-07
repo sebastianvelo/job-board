@@ -1,3 +1,4 @@
+import OfferPage from "app/components/pages/offer/OfferPage";
 import Routes from "app/types/enums/Routes";
 import { MainProps } from "../components/main/Main";
 import HomePage from "../components/pages/home/HomePage";
@@ -12,6 +13,10 @@ const data: MainProps = {
         {
             route: Routes.LOGIN,
             component: LoginPage
+        },
+        {
+            route: Routes.OFFER,
+            component: OfferPage
         },
     ]
 
