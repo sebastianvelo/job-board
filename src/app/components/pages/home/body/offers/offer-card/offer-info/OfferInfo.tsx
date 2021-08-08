@@ -12,12 +12,12 @@ export interface OfferDataProps extends OfferTitleProps, OfferContractorProps,
     description: string;
 }
 
-const OfferData: React.FC<OfferDataProps> = (props: OfferDataProps) => {
+const OfferInfo: React.FC<OfferDataProps> = (props: OfferDataProps) => {
     return (
-        <div className={`pl-6 flex justify-between items-baseline w-full flex-col space-y-2.5`}>
+        <div className={`pl-6 flex justify-between w-full flex-col space-y-2.5`}>
             <Container>
                 <OfferTitle {...props} />
-                <div className={`flex items-baseline`}>
+                <div className={`flex items-center`}>
                     <OfferSalary {...props} />
                     <OfferDate {...props} />
                 </div>
@@ -33,4 +33,4 @@ const OfferData: React.FC<OfferDataProps> = (props: OfferDataProps) => {
     );
 }
 
-export default OfferData;
+export default OfferInfo;

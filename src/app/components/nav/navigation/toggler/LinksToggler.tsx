@@ -6,7 +6,7 @@ export interface LinksTogglerProps {
 
 const LinksToggler: React.FC<LinksTogglerProps> = () => {
     return (
-        <div className="block sm:hidden">
+        <div className={`block sm:hidden`}>
             <HamburgerSvg />
         </div>
     );

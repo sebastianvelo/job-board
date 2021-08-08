@@ -1,4 +1,4 @@
-import OfferCard, { OfferCardProps } from "./offer/OfferCard"
+import OfferCard, { OfferCardProps } from "./offer-card/OfferCard"
 
 export interface OffersProps {
     offers: OfferCardProps[];

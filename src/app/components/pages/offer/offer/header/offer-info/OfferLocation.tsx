@@ -6,9 +6,7 @@ export interface OfferLocationProps {
 }
  
 const OfferLocation: React.FC<OfferLocationProps> = (props: OfferLocationProps) => {
-    return ( 
-        <SvgContainer svg={<LocationSvg />} label={props.location} />
-     );
+    return (<SvgContainer svg={<LocationSvg />} label={props.location} />);
 }
  
 export default OfferLocation;

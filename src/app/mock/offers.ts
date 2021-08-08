@@ -1,4 +1,4 @@
-export default [
+const offers = [
     {
         id: Math.floor(Math.random() * 10000),
         title: "Python Software Engineer",
@@ -8,7 +8,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "java", "rust", "react"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -22,7 +22,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -36,7 +36,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -50,7 +50,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -64,7 +64,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -78,7 +78,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -92,7 +92,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -106,7 +106,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -120,7 +120,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -134,7 +134,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -148,7 +148,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -162,7 +162,7 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "go"],
         description: "Python Software Engineer",
         daysAgo: 9
@@ -176,9 +176,11 @@ export default [
             currency: "EUR"
         },
         location: "Amsterdam",
-        company: 'Google',
+        contractor: 'Google',
         tags: ["python", "javascript", "otherlang"],
         description: "Python Software Engineer",
         daysAgo: 9
     },
 ]
+
+export default offers;
