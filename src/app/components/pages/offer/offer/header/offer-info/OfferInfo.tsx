@@ -1,17 +1,21 @@
+import Pill from "app/components/common/pill/Pill"
+import OfferLocation from "./OfferLocation";
+
 export interface OfferInfoProps {
 
 }
 
 const OfferInfo: React.FC<OfferInfoProps> = () => {
     return (
-        <div>
-            <h1 className={`text-3xl letter tracking-wider`}>Offer</h1>
+        <div className={`flex flex-col items-stretch space-y-6 sm:space-y-2`}>
+            <h1 className={`sm:text-3xl letter tracking-wider`}>Python Software Engineer</h1>
             <div className={`flex space-x-4`}>
-                <h1>Location</h1>
-                <h1>Type (Fully Remote) una pill</h1>
+                <OfferLocation location={`Centrum, Tel Aviv-Yafo`}></OfferLocation>
+                <Pill>Fully Remote</Pill>
             </div>
             <div>
-                10 000 - 16 667 USD <span>gross/month</span> - <span>Permanent</span>
+                <span className={`text-sm font-bold sm:text-lg`}>10 000 - 16 667 USD &nbsp;</span> 
+                <span className={`text-xs font-thin sm:text-md`}>gross/month - Permanent&nbsp;</span> 
             </div>
         </div>
     );

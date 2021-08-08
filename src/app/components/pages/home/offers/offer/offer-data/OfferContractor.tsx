@@ -1,5 +1,5 @@
 import { OfficeSvg } from "app/components/common/svg/Svg";
-import SvgContainer from "./common/SvgContainer";
+import SvgContainer from "../../../../../common/svg/SvgContainer";
 
 export interface OfferContractorProps {
     company: string;

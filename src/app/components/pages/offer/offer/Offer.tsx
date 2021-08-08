@@ -4,9 +4,9 @@ export interface OfferProps {
     
 }
  
-const Offer: React.SFC<OfferProps> = () => {
+const Offer: React.FC<OfferProps> = () => {
     return ( 
-        <div>
+        <div className={`border-r w-full border-gray-400 dark:border-gray-700 h-screen overflow-scroll col-span-3 lg:col-span-2`}>
             <OfferHeader />
         </div>
      );
