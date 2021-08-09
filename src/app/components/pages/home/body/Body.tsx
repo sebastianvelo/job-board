@@ -1,6 +1,7 @@
 import offers from "app/mock/offers";
-import Offers from "./offers/Offers";
+import OfferCards from "./offers/Offers";
 import Map from "./map/Map";
+import { offerToOfferCardList } from "app/transformer/Transformer";
 
 export interface BodyProps {
 
@@ -9,7 +10,7 @@ export interface BodyProps {
 const Body: React.FC<BodyProps> = () => {
     return (
         <div className="flex">
-            <Offers offers={offers} />
+            <OfferCards offers={offerToOfferCardList(offers)} />
             <Map />
         </div>
     );

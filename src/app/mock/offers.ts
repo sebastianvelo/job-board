@@ -1,186 +1,82 @@
-const offers = [
+import Offer from "app/entities/Offer";
+
+const offers: Offer[] = [
     {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
+        id: `1000`,
+        title: `Typescript Software Engineer`,
         salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
+            min: 10000,
+            max: 16400,
+            currency: `USD`
         },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "java", "rust", "react"],
-        description: "Python Software Engineer",
-        daysAgo: 9
+        location: `London`,
+        seniority: `Mid`,
+        contractor: {
+            name: `Microsoft`,
+            logo: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5Lh0CspsNK7R_aWhYQqne6Kp1YX5_hQjXA&usqp=CAU`,
+            employees: 1004,
+        },
+        tags: [`javascript`, `typescript`, `react`, `svelte`],
+        date: `2021-07-01`,
+        description: `Typescript is a new programming language that compiles to javascript. It is a superset of javascript that adds optional static typing, classes, and modules. Typescript is developed by Microsoft and is used by a number of large companies including Microsoft, Facebook, and Instagram.`,
     },
     {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
+        id: `1000`,
+        title: `Typescript Software Engineer`,
         salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
+            min: 10000,
+            max: 16400,
+            currency: `USD`
         },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
+        location: `London`,
+        seniority: `Mid`,
+        contractor: {
+            name: `Microsoft`,
+            logo: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5Lh0CspsNK7R_aWhYQqne6Kp1YX5_hQjXA&usqp=CAU`,
+            employees: 1004,
+        },
+        tags: [`javascript`, `typescript`, `react`, `svelte`],
+        date: `2021-08-01`,
+        description: `Typescript is a new programming language that compiles to javascript. It is a superset of javascript that adds optional static typing, classes, and modules. Typescript is developed by Microsoft and is used by a number of large companies including Microsoft, Facebook, and Instagram.`,
     },
     {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
+        id: `1000`,
+        title: `Typescript Software Engineer`,
         salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
+            min: 10000,
+            max: 16400,
+            currency: `USD`
         },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
+        location: `London`,
+        seniority: `Mid`,
+        contractor: {
+            name: `Microsoft`,
+            logo: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5Lh0CspsNK7R_aWhYQqne6Kp1YX5_hQjXA&usqp=CAU`,
+            employees: 1004,
+        },
+        tags: [`javascript`, `typescript`, `react`, `svelte`],
+        date: `2021-01-01`,
+        description: `Typescript is a new programming language that compiles to javascript. It is a superset of javascript that adds optional static typing, classes, and modules. Typescript is developed by Microsoft and is used by a number of large companies including Microsoft, Facebook, and Instagram.`,
     },
     {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
+        id: `1000`,
+        title: `Typescript Software Engineer`,
         salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
+            min: 10000,
+            max: 16400,
+            currency: `USD`
         },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
+        location: `London`,
+        seniority: `Mid`,
+        contractor: {
+            name: `Microsoft`,
+            logo: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5Lh0CspsNK7R_aWhYQqne6Kp1YX5_hQjXA&usqp=CAU`,
+            employees: 1004,
         },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "go"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
-    {
-        id: Math.floor(Math.random() * 10000),
-        title: "Python Software Engineer",
-        salary: {
-            min: "10 000",
-            max: "16 000",
-            currency: "EUR"
-        },
-        location: "Amsterdam",
-        contractor: 'Google',
-        tags: ["python", "javascript", "otherlang"],
-        description: "Python Software Engineer",
-        daysAgo: 9
-    },
+        tags: [`javascript`, `typescript`, `react`, `svelte`],
+        date: `2021-01-01`,
+        description: `Typescript is a new programming language that compiles to javascript. It is a superset of javascript that adds optional static typing, classes, and modules. Typescript is developed by Microsoft and is used by a number of large companies including Microsoft, Facebook, and Instagram.`,
+    }
 ]
 
 export default offers;

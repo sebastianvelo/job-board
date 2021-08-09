@@ -1,10 +1,10 @@
 import OfferCard, { OfferCardProps } from "./offer-card/OfferCard"
 
-export interface OffersProps {
+export interface OfferCardsProps {
     offers: OfferCardProps[];
 }
  
-const Offers: React.FC<OffersProps> = (props: OffersProps) => {
+const OfferCards: React.FC<OfferCardsProps> = (props: OfferCardsProps) => {
     return ( 
         <div className={`px-4 py-2 border-r w-full border-gray-400 dark:border-gray-700 h-screen overflow-scroll`}>
             {props.offers.map((offer, i) => {
@@ -14,4 +14,4 @@ const Offers: React.FC<OffersProps> = (props: OffersProps) => {
      );
 }
  
-export default Offers;
+export default OfferCards;

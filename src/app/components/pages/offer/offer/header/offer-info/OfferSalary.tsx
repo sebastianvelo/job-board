@@ -1,17 +1,19 @@
 export interface OfferSalaryProps {
     salary: {
-        min: string;
-        max: string;
+        min: number;
+        max: number;
         currency: string;
     };
 }
 
 const OfferSalary: React.FC<OfferSalaryProps> = (props: OfferSalaryProps) => {
     return (
-        <p className={`text-md font-bold sm:text-lg`}>
-            {props.salary.min} - {props.salary.max} {props.salary.currency}
-            <span className={`ml-2 text-sm font-thin sm:text-md`}>gross/month - Permanent</span> 
-        </p>
+        <div className={`block sm:flex items-baseline`}>
+            <p className={`text-md font-bold sm:text-lg`}>
+                {props.salary.min} - {props.salary.max} {props.salary.currency}
+            </p>
+            <span className={`sm:ml-2 text-sm font-thin sm:text-md`}>gross/month - Permanent</span>
+        </div>
     );
 }
 

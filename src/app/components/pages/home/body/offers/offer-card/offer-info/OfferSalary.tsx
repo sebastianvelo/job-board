@@ -1,7 +1,7 @@
 export interface OfferSalaryProps {
     salary: {
-        min: string;
-        max: string;
+        min: number;
+        max: number;
         currency: string;
     };
 }

@@ -7,10 +7,7 @@ import OfferTitle, { OfferTitleProps } from "./OfferTitle";
 import OfferTags, { OfferTagsProps } from "./OfferTags";
 
 export interface OfferDataProps extends OfferTitleProps, OfferContractorProps,
-    OfferLocationProps, OfferDateProps, OfferSalaryProps, OfferTagsProps {
-    id: number;
-    description: string;
-}
+    OfferLocationProps, OfferDateProps, OfferSalaryProps, OfferTagsProps {}
 
 const OfferInfo: React.FC<OfferDataProps> = (props: OfferDataProps) => {
     return (

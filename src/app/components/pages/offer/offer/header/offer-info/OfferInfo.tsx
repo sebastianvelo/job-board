@@ -1,23 +1,19 @@
 import Pill from "app/components/common/pill/Pill"
-import OfferLocation from "./OfferLocation";
-import OfferSalary from "./OfferSalary";
-import OfferTitle from "./OfferTitle";
+import OfferLocation, { OfferLocationProps } from "./OfferLocation";
+import OfferSalary, { OfferSalaryProps } from "./OfferSalary";
+import OfferTitle, { OfferTitleProps } from "./OfferTitle";
 
-export interface OfferInfoProps {
+export interface OfferInfoProps extends OfferTitleProps, OfferLocationProps, OfferSalaryProps {}
 
-}
-
-const OfferInfo: React.FC<OfferInfoProps> = () => {
+const OfferInfo: React.FC<OfferInfoProps> = (props: OfferInfoProps) => {
     return (
-        <div className={`flex flex-col items-stretch space-y-6 sm:space-y-2 `}>
-            <OfferTitle title={`Python Software Engineer`} />
-            <div className={`flex sm:space-x-4 space-y-2 flex-col sm:flex-row items-baseline`}>
-                <OfferLocation location={`Centrum, Tel Aviv-Yafo`}></OfferLocation>
+        <div className={`flex flex-col space-y-6 sm:space-y-2 `}>
+            <OfferTitle title={props.title} />
+            <div className={`block sm:flex space-y-2 items-center justify-between`}>
+                <OfferLocation location={props.location}></OfferLocation>
                 <Pill>Fully Remote</Pill>
             </div>
-            <div className={`flex flex-col`}>
-                <OfferSalary salary={{min:'10000', max:'16667', currency:`USD` }} />
-            </div>
+            <OfferSalary salary={props.salary} />
         </div>
     );
 }

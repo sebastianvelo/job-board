@@ -3,12 +3,13 @@ import Routes from "app/types/enums/Routes";
 
 export interface OfferTitleProps {
     title: string;
-    id: number;
+    id: string;
 }
  
 const OfferTitle: React.FC<OfferTitleProps> = (props: OfferTitleProps) => {
+    const path = `${`${Routes.OFFER}`.replace(`:id`, props.id.toString())}`;
     return ( 
-        <Link pathname={`${`${Routes.OFFER}`.replace(`:id`, props.id.toString())}`} className={`md:text-xl tracking-wider`}>{props.title}</Link>
+        <Link pathname={path} className={`text-lg md:text-xl tracking-wider`}>{props.title}</Link>
      );
 }
  
