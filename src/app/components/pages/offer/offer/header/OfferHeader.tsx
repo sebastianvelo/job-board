@@ -20,7 +20,7 @@ const OfferHeader: React.FC<OfferHeaderProps> = (props: OfferHeaderProps) => {
         <div className="relative mb-10">
             <div className={`bg-opacity-30 bg-blue-500 px-8 py-2 space-y-4 pb-10 h-auto sm:h-72`}>
                 <ReturnButton />
-                <div className={`flex flex-col sm:flex-row sm:space-x-10 space-y-2`}>
+                <div className={`flex flex-col sm:flex-row sm:space-x-10 space-y-2 items-baseline`}>
                     <CompanyLogo src={props.contractor.logo} alt={props.contractor.name} />
                     <OfferInfo {...props} />
                 </div>

@@ -8,7 +8,7 @@ export interface OfferPageProps {
 
 const OfferPage: React.FC<OfferPageProps> = (props: OfferPageProps) => {
     const { id }: { id: string } = useParams();
-    const offer = offers.find(offer => offer.id === id);
+    const offer = offers.find(o => o.id === id);
     return (
         <div className={`grid grid-cols-3`}>
             {offer && <Offer {...offer} />}

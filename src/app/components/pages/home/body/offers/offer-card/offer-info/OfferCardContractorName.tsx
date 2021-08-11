@@ -1,15 +1,15 @@
 import { OfficeSvg } from "app/components/common/svg/Svg";
 import SvgContainer from "app/components/common/svg/SvgContainer";
 
-export interface OfferContractorProps {
+export interface OfferCardContractorNameProps {
     contractor: {
         name: string;
         logo: string;
     };
 }
  
-const OfferContractor: React.FC<OfferContractorProps> = (props: OfferContractorProps) => {
+const OfferCardContractorName: React.FC<OfferCardContractorNameProps> = (props: OfferCardContractorNameProps) => {
     return (<SvgContainer svg={<OfficeSvg />} label={props.contractor.name} />);
 }
  
-export default OfferContractor;
+export default OfferCardContractorName;

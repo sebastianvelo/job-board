@@ -12,7 +12,7 @@ const Main: React.FC<MainProps> = (props: MainProps) => {
     return (
         <main>
             {props.pages.map((page: Page, i: number) => (
-                <Route key={i} path={page.route}>
+                <Route key={i} exact path={page.route}>
                     <PageWrapper route={page.route} setLinkActive={() => {}}>{getJSX(page.component)}</PageWrapper>
                 </Route>
             ))}

@@ -1,10 +1,10 @@
 import Pill from "app/components/common/pill/Pill";
 
-export interface OfferDateProps {
+export interface OfferCardDateProps {
     daysAgo: number;
 }
 
-const OfferDate: React.FC<OfferDateProps> = (props: OfferDateProps) => {
+const OfferCardDate: React.FC<OfferCardDateProps> = (props: OfferCardDateProps) => {
     return (
         <div className={`hidden md:block`}>
             <Pill>{props.daysAgo}d ago</Pill>
@@ -12,4 +12,4 @@ const OfferDate: React.FC<OfferDateProps> = (props: OfferDateProps) => {
     );
 }
 
-export default OfferDate;
+export default OfferCardDate;
