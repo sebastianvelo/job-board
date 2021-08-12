@@ -9,7 +9,7 @@ export interface ReturnButtonProps {
 const ReturnButton: React.FC<ReturnButtonProps> = () => {
     return (
     <Link pathname={`${Routes.HOME}`}>
-        <button className={`bg-black bg-opacity-25 px-2 py-2 rounded-full`}><ArrowLeftSvg /></button>    
+        <button className={`bg-black bg-opacity-25 px-2 py-2 rounded-md`}><ArrowLeftSvg /></button>    
     </Link>);
 }
 

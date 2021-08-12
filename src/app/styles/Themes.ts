@@ -24,5 +24,5 @@ export const text = {
 }
 
 export const transition = {
-    default: `transition duration-500`
+    default: `transition duration-1000`
 }
