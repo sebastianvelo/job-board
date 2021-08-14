@@ -7,13 +7,15 @@ const offers: Offer[] = [
         salary: {
             min: 10000,
             max: 16400,
-            currency: `USD`
+            currency: `USD`,
+            paymentTime: `gross/month`,
+            type: `Permanent`,
         },
         location: `London`,
         seniority: `Mid`,
         contractor: {
             name: `Microsoft`,
-            logo: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAclBMVEX////xURuAzCgAre/7vAkAqO7wQwD7twD6uKHQ7abwRgB5yRT70cn/0cb1++N1yADF6Kf/7uet8Pz+87DI5vrB7P//+db+4KHE9f7/+sb0+uHwNgD/+vgAo+36tJv7/fLp99RuxgDm+v7//u77swD//ePWuxWSAAABDUlEQVR4nO3Zy1LCQBCG0faSRAWJUcRLgGjE939FsdzPLKasKeWcdW/+b9sRAAAAAAAAAAAAAAAAAAAA8H8N+6uk/RAxXWe81V5RZjneJI23Ea/vi6T+rvaKMsv2LKk9Nlj150kLDTTQQAMNNNBAAw000EADDTTQQAMNNNBAAw000EADDTTQQAMNTrfB2Cb9/N77tD/eYDtkbI9Hq4yp9gooN99nzBEfDxmb2ivKrHdN0u4xYnPokg5PtVeUWTcXSc13g+4yqdNAAw000EADDTTQQAMNNNBAAw000EADDTTQQAMNNNBAAw000OB0G/i9x/ycMUdMLxmftVcAAAAAAAAAAAAAAAAAAADA7/kCywdYWjGc/HcAAAAASUVORK5CYII=`,
+            logo: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png`,
             employees: 1004,
         },
         tags: [`javascript`, `typescript`, `react`, `svelte`],
@@ -26,13 +28,15 @@ const offers: Offer[] = [
         salary: {
             min: 9000,
             max: 18000,
-            currency: `USD`
+            currency: `USD`,
+            paymentTime: `gross/month`,
+            type: `Permanent`,
         },
         location: `Amsterdam`,
         seniority: `Sr`,
         contractor: {
             name: `Facebook`,
-            logo: `https://tecnisiem.com/wp-content/uploads/2019/11/facebook-wordmark-cycling-CONTENT-2019.gif`,
+            logo: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEU7WZj///8sT5MlS5HT1uLj5Ovr7PE4VpYyU5UdRo8rTpOIlbc3V5dgdadVap+8w9Vyg6+zu9Brfqz5+fqqs8udp8Py8/ZKZJ1XbqJccqXAxtfb3edEXpqapMGOmrvg4up9i7IFPYu6gpP+AAAChklEQVR4nO3cC27iMBhFYSYPbIKBkPBqYYZ2/5tsq5lW1RBDolqyr3W+FfgoJD+YJLMZAAAAAAAAAAAAAAAAAAAPOeeMMW6Iib22AGxR2uPxdDqthjzFXt5PmWbW7qq67395HIyLvcafMGX37G37a65c6JrufD9PvNBenh/2SRc27WFEoG6hK/dj+oQLi+24QNVC14w5BZULF2OPoGphM/IclC203fhAzUIzz7yw+D0hULHQzKYEKhYWu8wLnX3wY0K+0P6ZFChYWFwzL3SraYF6hXbC1xnNwqbKvfAy6mfvN2o7Ue54r6baL9v/dbGXPJG5c6G5rkprzY3YS57ozjS8Wht7dSFY/7fuJ7WjNcw/LKpF7LWF4f/a/ZLFZ/ReYSaB/sKD1Rp7Xt5t0nkRe2mBeAvr7AvzP4YUyqBQH4X6KNRHoT4K9VGoZeh+2CarwvWA48ZTWL8uhpXJ7m64SXdc+NXJbuCEKqya2CU+oQq3yZ6goQp3yW6khipMdy88VOEq2T9sAhX2p9wLD5fYIV6BCutkh0WowqqMHeIVqHCT/THcJzssQhWmOw5DFbbJDotQhemOw0CFfboXmkCF83SHRaDCc/aFCY/DQIUJj8NAhcvsC7t0h0WgwmQ32mYf+8HT7nfu+6Fn8hO+lL7bbW5tfdnVcb1ef71IofuU8If0XdHceq19heXHOzC+XobxT8KfUZ/SW5jstuhEFOqjUB+F+ijUR6E+CvVRqI9CfRTqo1Afhfoo1EehPgr1UaiPQn0U6qNQH4X6KNRHoT4K9VGoj0J9FOqjUB+F+ijUR6G+0vfI3jmXQvOyHNYKPsQ1zNhhaT+GBwAAAAAAAAAAAAAAAACI4g0VHDIXNrZKGgAAAABJRU5ErkJggg==`,
             employees: 1004,
         },
         tags: [`python`, `machinelearning`, `django`],
@@ -45,13 +49,15 @@ const offers: Offer[] = [
         salary: {
             min: 3400,
             max: 9000,
-            currency: `USD`
+            currency: `USD`,
+            paymentTime: `gross/month`,
+            type: `Permanent`,
         },
         location: `Madrid`,
         seniority: `Jr`,
         contractor: {
             name: `Google`,
-            logo: `https://www.trecebits.com/wp-content/uploads/2015/09/google.jpg`,
+            logo: `https://e7.pngegg.com/pngimages/8/502/png-clipart-google-logo-google-logo-google-now-google-search-google-plus-search-engine-optimization-trademark.png`,
             employees: 300,
         },
         tags: [`scala`, `python`],
@@ -64,13 +70,15 @@ const offers: Offer[] = [
         salary: {
             min: 5000,
             max: 8400,
-            currency: `EUR`
+            currency: `EUR`,
+            paymentTime: `gross/month`,
+            type: `Permanent`,
         },
         location: `Dublin`,
         seniority: `Mid`,
         contractor: {
             name: `Netflix`,
-            logo: `https://www.techgames.com.mx/wp-content/uploads/2019/12/Netflix-logo-2019.jpg`,
+            logo: `https://luhnoticias.es/wp-content/uploads/netflix-3.png`,
             employees: 1004,
         },
         tags: [`react`, `typescript`, `javascript`, `express`],

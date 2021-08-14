@@ -7,9 +7,9 @@ export interface OfferInfoProps extends OfferTitleProps, OfferLocationProps, Off
 
 const OfferInfo: React.FC<OfferInfoProps> = (props: OfferInfoProps) => {
     return (
-        <div className={`flex flex-col space-y-6 sm:space-y-2 `}>
+        <div className={`flex flex-col space-y-6 sm:space-y-2 w-full sm:w-max`}>
             <OfferTitle title={props.title} />
-            <div className={`block sm:flex space-y-2 items-center justify-between`}>
+            <div className={`flex items-center justify-evenly sm:justify-between`}>
                 <OfferLocation location={props.location}></OfferLocation>
                 <Pill>Fully Remote</Pill>
             </div>

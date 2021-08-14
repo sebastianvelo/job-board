@@ -5,6 +5,8 @@ interface Offer {
         min: number;
         max: number;
         currency: string;
+        paymentTime: string;
+        type: string;
     },
     location: string;
     seniority: string;

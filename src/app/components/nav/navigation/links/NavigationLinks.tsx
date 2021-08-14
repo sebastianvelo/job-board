@@ -6,7 +6,7 @@ export interface NavigationLinksProps {
 
 const NavigationLinks: React.FC<NavigationLinksProps> = (props: NavigationLinksProps) => {
     return (
-        <div className={`hidden sm:block`}>
+        <div className={`hidden sm:block sm:space-x-2`}>
             {props.links.map((link, index) => (
                 <NavigationLink {...link} key={index} />
             ))}
