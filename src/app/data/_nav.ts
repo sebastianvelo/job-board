@@ -9,16 +9,8 @@ const data: NavProps = {
             children: `Offers`
         },
         {
-            pathname: `${Routes.HOME}`,
-            children: `Brand Stories`
-        },
-        {
-            pathname: `${Routes.HOME}`,
-            children: `Geek`
-        },
-        {
-            pathname: `${Routes.HOME}`,
-            children: `Matchmaking`
+            pathname: `${Routes.LOGIN}`,
+            children: `Login`
         },
     ]
 }
