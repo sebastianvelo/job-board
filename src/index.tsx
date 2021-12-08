@@ -1,9 +1,9 @@
-import App from 'app/components/App';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import App from "app/App";
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
+import "./style/index.css";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +11,7 @@ ReactDOM.render(
       <App />
     </HashRouter>
   </React.StrictMode>,
-  document.querySelector('#app')
+  document.querySelector("#app")
 );
 
 reportWebVitals();

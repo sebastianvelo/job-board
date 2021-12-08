@@ -1,25 +1,26 @@
-import OfferPage from "app/components/pages/offer/OfferPage";
-import Routes from "app/types/enums/Routes";
-import { MainProps } from "../components/main/Main";
-import HomePage from "../components/pages/home/HomePage";
-import LoginPage from "../components/pages/login/LoginPage";
+import { MainProps } from "app/layout/main/Main";
+import HomePage from "app/pages/home/HomePage";
+import LoginPage from "app/pages/login/LoginPage";
+import OfferPage from "app/pages/offer/OfferPage";
+import Routes from "app/routes/Routes";
 
 const data: MainProps = {
-    pages: [
-        {
-            route: Routes.HOME,
-            component: HomePage
-        },
-        {
-            route: Routes.LOGIN,
-            component: LoginPage
-        },
-        {
-            route: Routes.OFFER,
-            component: OfferPage
-        },
-    ]
-
+  pages: [
+    {
+      route: Routes.HOME,
+      Component: HomePage,
+      props: {},
+    },
+    {
+      route: Routes.LOGIN,
+      Component: LoginPage,
+      props: {},
+    },
+    {
+      route: Routes.OFFER,
+      Component: OfferPage,
+    },
+  ],
 };
 
 export default data;
