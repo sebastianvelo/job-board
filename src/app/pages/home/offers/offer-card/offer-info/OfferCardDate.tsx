@@ -1,4 +1,4 @@
-import Pill from "components/atom/pill/Pill";
+import Pill from "common/components/atom/pill/Pill";
 
 export interface OfferCardDateProps {
   daysAgo: number;

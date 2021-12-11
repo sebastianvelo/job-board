@@ -1,4 +1,4 @@
-import Link, { LinkProps } from "components/atom/link/Link";
+import Link, { LinkProps } from "common/components/atom/link/Link";
 import { background, transition } from "app/styles/Themes";
 
 export interface NavigationLinkProps extends LinkProps {}

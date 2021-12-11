@@ -7,6 +7,10 @@ import Routes from "app/routes/Routes";
 const data: MainProps = {
   pages: [
     {
+      route: Routes.OFFER,
+      Component: OfferPage,
+    },
+    {
       route: Routes.HOME,
       Component: HomePage,
       props: {},
@@ -15,10 +19,6 @@ const data: MainProps = {
       route: Routes.LOGIN,
       Component: LoginPage,
       props: {},
-    },
-    {
-      route: Routes.OFFER,
-      Component: OfferPage,
     },
   ],
 };

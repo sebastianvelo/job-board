@@ -1,15 +1,12 @@
 import { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const useScrollTop = () => {
-  const history = useHistory();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    const unlisten = history.listen(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-    return () => unlisten();
-  }, [history]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
 };
 
 export default useScrollTop;

@@ -1,4 +1,4 @@
-import Pill from "components/atom/pill/Pill";
+import Pill from "common/components/atom/pill/Pill";
 import OfferLocation, { OfferLocationProps } from "./OfferLocation";
 import OfferSalary, { OfferSalaryProps } from "./OfferSalary";
 import OfferTitle, { OfferTitleProps } from "./OfferTitle";

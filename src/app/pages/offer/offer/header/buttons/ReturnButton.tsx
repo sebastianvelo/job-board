@@ -1,4 +1,4 @@
-import Link from "components/atom/link/Link";
+import Link from "common/components/atom/link/Link";
 import { ArrowLeftSvg } from "app/components/svg/Svg";
 import Routes from "app/routes/Routes";
 

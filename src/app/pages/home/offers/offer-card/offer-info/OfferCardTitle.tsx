@@ -1,4 +1,4 @@
-import Link from "components/atom/link/Link";
+import Link from "common/components/atom/link/Link";
 import Routes from "app/routes/Routes";
 
 export interface OfferCardTitleProps {
